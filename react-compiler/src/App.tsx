@@ -15,6 +15,7 @@ function App() {
 
   return (
     <>
+      <p>React Compiler App</p>
       <Heading title={Object.keys(data)[0]} />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
