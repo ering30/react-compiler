@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { useFetchData } from './useFetchData'
 import { Heading } from './components/Heading'
+import { Dashboard } from './components/Dashboard'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,6 +23,7 @@ function App() {
           count is {count}
         </button>
       </div>
+      <Dashboard data={data} />
     </>
   )
 }
