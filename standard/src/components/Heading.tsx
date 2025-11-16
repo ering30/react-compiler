@@ -1,13 +1,17 @@
-export const Heading = ({ title }: { title: string}) => {
+import { capitalised } from "../lib/utils"
+
+export const Heading = ({ title, size = "h1" }: { title: string, size?: string }) => {
   console.log('title', title)
 
-  const capitalised = (title: string) => {
-    const firstChar = title.charAt(0).toLocaleUpperCase();
-    const restOfWord = title.slice(1)
-    return firstChar + restOfWord
-  }
-
-  return (
+  if (size === "h1" ) return (
     <h1>{capitalised(title)}</h1>
+  )
+
+  if (size === "h2" ) return (
+    <h2>{capitalised(title)}</h2>
+  )
+
+  if (size === "h3" ) return (
+    <h2>{capitalised(title)}</h2>
   )
 }
