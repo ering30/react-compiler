@@ -1,0 +1,40 @@
+{
+  "dashboard": {
+    "workflows": {
+      "workflow_count": 8,
+      "active_workflows": [
+        {
+          "title": "Legal Workflow",
+          "status": "In Progress",
+          "type": "Contract Review",
+          "assessment_count": 56
+        },
+        {
+          "title": "New Business NDA",
+          "status": "Under Review",
+          "type": "NDA",
+          "assessment_count": 12
+        }
+      ]
+    },
+    "matters": {
+      "matter_count": 132,
+      "open_matters": [
+        {
+          "title": "New NDA Review - Executive Team",
+          "status": "In Progress",
+          "source": "Slack",
+          "owner": "NDA Team",
+          "comments_count": 6 
+        },
+        {
+          "title": "Branding Enquiry",
+          "status": "Awaiting Response",
+          "source": "Email",
+          "owner": "John Doe",
+          "comments_count": 2 
+        }
+      ]
+    }
+  }
+}
