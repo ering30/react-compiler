@@ -4,6 +4,7 @@ export const useFetchData = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
+    console.log('inside useEffect')
     fetch('/data.json')
       .then(response => response.json())
       .then(data => setData(data))
